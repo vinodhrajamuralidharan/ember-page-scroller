@@ -1,4 +1,4 @@
-page-scroller
+ember-page-scroller
 ==============================================================================
 
 [Short description of the addon.]
@@ -7,7 +7,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install page-scroller
+ember install ember-page-scroller
 ```
 
 
@@ -23,7 +23,7 @@ Contributing
 ### Installation
 
 * `git clone <repository-url>`
-* `cd page-scroller`
+* `cd ember-page-scroller`
 * `npm install`
 
 ### Linting
