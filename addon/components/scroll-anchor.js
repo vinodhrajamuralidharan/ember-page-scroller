@@ -1,11 +1,11 @@
 import Component from '@ember/component';
-import layout from '../templates/components/page-scroll-anchor';
+import layout from '../templates/components/scroll-anchor';
 import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
   layout,
-  pageScroll: service(),
+  scroll: service(),
 
   tagName: 'div',
   name: '',

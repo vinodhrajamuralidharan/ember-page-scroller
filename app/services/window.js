@@ -1,1 +1,1 @@
-export { default } from 'page-scroller/services/window';
+export { default } from 'ember-page-scroller/services/window';
