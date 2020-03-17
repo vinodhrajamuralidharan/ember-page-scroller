@@ -41,12 +41,13 @@ export default Service.extend({
     'touchstart'
   ],
 
-  to: function(name, options, callback) {
+  to: function(name, position, options, callback) {
     scheduleOnce(
       'afterRender',
       this,
       this.afterRenderTo,
       name,
+      position,
       options,
       callback
     );
@@ -69,7 +70,7 @@ export default Service.extend({
     );
   },
 
-  afterRenderTo(name, options, callback) {
+  afterRenderTo(name, position, options, callback) {
     if (typeof options === 'function') {
       callback = options;
       options = null;
@@ -163,9 +164,9 @@ export default Service.extend({
         // Allows user to cancel scroll
         // to prevent jittering
         $page.on(scrollStopEventNames.join(' '), onScrollStop);
-
+        const scrollPosition = scrollTopDestination - (position === 'bottom' ? document.documentElement.clientHeight : 0);
         $page.animate(
-          { scrollTop: scrollTopDestination },
+          { scrollTop: scrollPosition },
           duration || 300,
           'swing',
           onScrollStop

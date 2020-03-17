@@ -1,6 +1,6 @@
 {
   "name": "ember-page-scroller",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Page scroller service",
   "keywords": [
     "ember-addon"
