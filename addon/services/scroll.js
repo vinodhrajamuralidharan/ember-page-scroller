@@ -164,7 +164,7 @@ export default Service.extend({
         // Allows user to cancel scroll
         // to prevent jittering
         $page.on(scrollStopEventNames.join(' '), onScrollStop);
-        const scrollPosition = scrollTopDestination - (position === 'bottom' ? document.documentElement.clientHeight : 0);
+        const scrollPosition = scrollTopDestination - (position === 'bottom' ? (document.documentElement.clientHeight - 50) : 0);
         $page.animate(
           { scrollTop: scrollPosition },
           duration || 50,
