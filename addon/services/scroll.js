@@ -168,7 +168,7 @@ export default Service.extend({
         $page.animate(
           { scrollTop: scrollPosition },
           duration || 50,
-          'easein',
+          'swing',
           onScrollStop
         );
       }
