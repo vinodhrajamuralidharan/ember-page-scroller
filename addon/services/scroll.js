@@ -167,8 +167,8 @@ export default Service.extend({
         const scrollPosition = scrollTopDestination - (position === 'bottom' ? document.documentElement.clientHeight : 0);
         $page.animate(
           { scrollTop: scrollPosition },
-          duration || 300,
-          'swing',
+          duration || 50,
+          'easein',
           onScrollStop
         );
       }
