@@ -10,7 +10,7 @@ export default Service.extend({
   viewport: service(),
   window: service(),
 
-  _minimumDuration: 500,
+  _minimumDuration: 50,
 
   _anchors: EmberObject.create(),
 
